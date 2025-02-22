@@ -1,0 +1,41 @@
+POST http://127.0.0.1:8000/videos
+Content-Type: application/json
+
+
+{
+    "title": "Video node",
+    "description": "Um dos melhores de todos os tempos",
+    "duration": "200"
+}
+
+###
+
+GET http://127.0.0.1:8000/videos/?search=node
+
+###
+ 
+ PUT http://127.0.0.1:8000/videos/1f7cbfa5-5656-4744-8f62-8815312dd8b0
+Content-Type: application/json
+
+
+{
+    "title": "Video j54k28",
+    "description": "Um dos piores de todos os tempos",
+    "duration": "200"
+}
+
+
+###
+
+
+ DELETE http://127.0.0.1:8000/videos/1f7cbfa5-5656-4744-8f62-8815312dd8b0
+Content-Type: application/json
+
+
+{
+    "title": "Video 02",
+    "description": "Um dos melhores de todos os tempos",
+    "duration": "200"
+}
+
+
